@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+<EditText
+    android:id="@+id/etname"
+    android:inputType="text"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Enter name"
+    android:textSize="20sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Check-in Date"
+        android:layout_marginTop="20dp"
+        android:id="@+id/tvCheckin"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Check-out Date"
+        android:layout_marginTop="20dp"
+        android:id="@+id/tvCheckout"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Select a Country"
+        android:layout_marginTop="20dp"
+        android:id="@+id/tvCountry"/>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinCountry"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Select Room type"
+        android:id="@+id/tvRoomType"/>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:id="@+id/spinRoom"/>
+
+<!--    <EditText-->
+<!--        android:id="@+id/etPrice"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textSize="20sp"-->
+<!--        android:hint="Price"/>-->
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Adult"
+            android:layout_marginTop="20dp"
+            android:id="@+id/tvAdult"/>
+
+        <EditText
+            android:id="@+id/etAdult"
+            android:inputType="number"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Children"
+            android:layout_marginTop="20dp"
+            android:id="@+id/tvChildren"/>
+
+        <EditText
+            android:id="@+id/etChildren"
+            android:inputType="number"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"/>
+
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Room"
+            android:layout_marginTop="20dp"
+            android:id="@+id/tvRoom"/>
+
+        <EditText
+            android:id="@+id/etRoom"
+            android:inputType="number"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"/>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnCalculate"
+        android:text="Calculate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Total"
+        android:id="@+id/tvResult1"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="VAT"
+        android:layout_marginTop="20dp"
+        android:id="@+id/tvResult2"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Service Charge"
+        android:id="@+id/tvResult3"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Grand Total"
+        android:layout_marginTop="20dp"
+        android:id="@+id/tvResult4"/>
+
+
+</LinearLayout>
